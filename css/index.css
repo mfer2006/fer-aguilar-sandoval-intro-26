@@ -1,0 +1,74 @@
+body {
+    background-color: floralwhite;
+    font-family: amarna, sans-serif; 
+    font-weight: 150;
+    color:black
+}
+
+h1{
+    font-size: xx-large;
+    font-family: amarna, sans-serif;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: underline;
+    color: darkolivegreen;
+    letter-spacing: 0px;
+    padding: 20px;
+    margin: 30px;
+}
+h2 {
+    font-size: x-large;
+    font-family: amarna, sans-serif;
+    font-weight: 550;
+    color: darkgoldenrod;
+    letter-spacing: 1px;
+    text-align: left;
+    padding: 5px;
+    margin: 5px;
+}
+
+#about , #skills , #experience ,#navigation, #projects, #connect {
+    background-color: linen;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 30px;
+    border: 2px dotted darkolivegreen;
+}
+#connect a {
+    color: rebeccapurple;
+    font-weight: 150;
+}
+#navigation ul {
+    color: olive;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 5px;
+    margin: 10px;
+}
+
+#experience li {
+    font-size: medium;
+    font-family: amarna, sans-serif;
+    font-weight: 150;
+    background-color: rgb(196, 204, 174);
+    border-radius: 20px;
+    letter-spacing: 0px;
+    padding: 5px;
+    margin: 5px;
+}
+#experience ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 5px;
+    margin: 10px;
+}
+
+#connect ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 5px;
+    margin: 10px;
+}
