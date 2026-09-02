@@ -2,11 +2,12 @@
 let today = new Date();
 let thisYear = today.getFullYear();
 
-const footer = document.querySelector('footer');
+const footer = document.createElement('footer');
 
 let copyRight = document.createElement('p');
 copyRight.innerHTML = `&copy; ${thisYear} Maria Fernanda Aguilar Sandoval`;
-document.body.appendChild(copyRight);
+footer.appendChild(copyRight);
+document.body.appendChild(footer);
 
 
 let skills = ['HTML','R', 'Jamovi' , 'CSS', 'JavaScript', 'Git', 'GitHub']; 
