@@ -52,5 +52,21 @@ messageForm.addEventListener('submit', function(event) {
     event.target.reset();
 });
 
+let projectSection = document.getElementById('projects');
+let projectList = projectSection.querySelector('ul');
 
+fetch('https://api.github.com/users/mfer2006/repos')
+  .then(response => response.json())
+  .then(data => {
+    let repositories = data;
+    console.log(repositories);
 
+    for (let i = 0; i < repositories.length; i++) {
+      let project = document.createElement('li');
+      project.innerText = repositories[i].name;
+      projectList.appendChild(project);
+    }
+  })
+  .catch(error => {
+    console.error('Error fetching repositories:', error);
+  });
