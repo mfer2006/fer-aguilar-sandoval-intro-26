@@ -1,0 +1,106 @@
+body {
+    background-color: floralwhite;
+    font-family: amarna, sans-serif;
+    font-weight: 150;
+    color: black;
+}
+
+h1 {
+    font-size: xx-large;
+    font-family: amarna, sans-serif;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: underline;
+    color: darkolivegreen;
+    padding: 20px;
+    margin: 30px;
+}
+
+#controls,
+#results {
+    background-color: linen;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 30px;
+    border: 2px solid darkolivegreen;
+}
+
+#navigation ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 5px;
+    margin: 10px;
+}
+
+#navigation a {
+    color: rebeccapurple;
+    text-decoration: none;
+    font-weight: 150;
+}
+
+#navigation a:hover {
+    text-decoration: underline;
+}
+
+#controls {
+    text-align: center;
+}
+
+button {
+    font-family: amarna, sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    background-color: rgb(206, 194, 166);
+    color: darkolivegreen;
+
+    border: none;
+    border-radius: 20px;
+
+    padding: 10px 20px;
+    margin: 8px;
+
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: darkolivegreen;
+    color: floralwhite;
+}
+
+#results {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+#artworkResults,
+#artistResults {
+    flex: 1;
+    background-color: linen;
+    border: 2px dotted darkolivegreen;
+    border-radius: 30px;
+    padding: 20px;
+    text-align: center;
+}
+
+#artworkResults img {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin: 0 auto 15px;
+    border-radius: 20px;
+}
+
+@media (max-width: 600px) {
+    #results {
+        flex-direction: column;
+    }
+
+    #artworkResults,
+    #artistResults {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
