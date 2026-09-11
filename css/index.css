@@ -2,7 +2,7 @@ body {
     background-color: floralwhite;
     font-family: amarna, sans-serif; 
     font-weight: 150;
-    color:black
+    color:black;
 }
 
 h1{
@@ -27,7 +27,7 @@ h2 {
     margin: 5px;
 }
 
-#about , #skills , #experience ,#navigation, #projects, #connect {
+#about , #skills , #experience ,#navigation, #projects, #connect, #leave_message, #messages {
     background-color: linen;
     padding: 20px;
     margin: 20px;
@@ -76,4 +76,28 @@ h2 {
     gap: 20px;
     padding: 5px;
     margin: 10px;
+}
+#leave_message form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#leave_message input,
+#leave_message textarea,
+#leave_message button {
+    padding: 10px;
+    font-size: 1rem;
+}
+
+#leave_message button {
+    width: fit-content;
+}
+@media (max-width: 600px) {
+    #leave_message input,
+    #leave_message textarea,
+    #leave_message button {
+        width: 100%;
+        box-sizing: border-box;
+    }
 }
