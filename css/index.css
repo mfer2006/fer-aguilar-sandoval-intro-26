@@ -101,3 +101,10 @@ h2 {
         box-sizing: border-box;
     }
 }
+#projects ul {
+  padding-left: 20px;
+}
+
+#projects li {
+  margin-bottom: 8px;
+}
