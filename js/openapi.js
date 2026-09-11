@@ -38,11 +38,12 @@ artpiecesButton.addEventListener('click', function() {
 });
 
 // ARTIST BUTTON
+
 artistsButton.addEventListener('click', function() {
 
-    if (currentArtistId === null) {
+    if (!currentArtistId) {
         artistResults.innerHTML =
-            '<p>Choose an artwork first.</p>';
+            '<p>No artist information is available for this artwork:((</p>';
         return;
     }
 
@@ -54,12 +55,15 @@ artistsButton.addEventListener('click', function() {
 
             artistResults.innerHTML = `
                 <h3>${artist.title}</h3>
-                <p>Born: ${artist.birth_date || 'Unknown'}</p>
-                <p>Died: ${artist.death_date || 'Unknown'}</p>
+                <p>Born: ${artist.birth_date || 'Sorry, no birth information available:('}</p>
+                <p>Died: ${artist.death_date || 'Sorry, no death information available:('}</p>
             `;
         })
         .catch(error => {
             console.error('Error fetching artist:', error);
+
+            artistResults.innerHTML =
+                '<p>Sorry, artist information could not be loaded:,((</p>';
         });
 
 });
